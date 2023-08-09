@@ -1,0 +1,476 @@
+* {
+   background-color: #fef4ea;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef4ea;
+    color: #f78da7;
+    padding: 20px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+}
+
+.nav-links li {
+    margin: -10px 20px;
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: #540c24;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-links a:hover {
+    color: #0b9df8;
+}
+.nav-links .instagram a:hover {
+    color: #540c24;
+}
+.burger {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #f78da7;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+}
+
+.logo img {
+    margin: -50px 0;
+    margin-left: 125px;
+    width: 300px;  
+    height: 180px;
+    border-top-left-radius: 150px ;
+}
+
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+.image figure img {
+    height: 500px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 60px;
+    margin-left: 120px;
+    margin-top: 15px;
+    border-color: #111;
+    border-width: 1px;
+    border-style: groove;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.image figure:hover img {
+    box-shadow: 20px 15px 10px #969494;
+    -webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.mission {
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.mission p {
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 120px;
+}
+
+.mission p span {
+    font-size: 48px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+    background: linear-gradient(to right,
+    #cf2e2e,       
+    #f78da7);
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1000;
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s infinite normal,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(250, 5, 5, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+
+.insta {
+        background-color: #dc7c7c; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: -15px 2px;
+        cursor: pointer;
+        -webkit-border-radius: 60px;
+        -webkit-transition-duration: 0.7s;
+        transition-duration: 0.7s;
+}
+
+.insta:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/* Gallery */
+.gallery {
+    padding: 40px 0;
+    background-color: #f5f5f5; 
+}
+
+.gallery h2 {
+    font-size: 40px;
+    color: #cf2e2e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 0 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333; 
+    color: white;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    background-color: #333;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-content {
+    background-color: #333;
+}
+
+
+.footer-section h2 {
+    background-color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    background-color: #333;
+    margin-bottom: 15px;
+}
+.footer-section li {
+    background-color: #333;
+    list-style-type: none;
+}
+
+.ulb {
+    background-color: #333;
+}
+
+.ulb span {
+    background-color: #333;
+}
+
+.footer-section a {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    background-color: #333;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #222; 
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color:  #540c24;
+    padding: -5px 0;
+}
+
+.work {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid  #540c24; 
+    border-radius: 10px;
+}
+
+.work h2 {
+    color:  #540c24;
+}
+
+.work p {
+    color: #656464; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 0px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 210px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #cf2e2e;
+    outline: none; 
+}
+
+textarea {
+    width: 210px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #333;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    resize: none;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    transition: border-color 0.3s ease;
+    border-radius: 20px; 
+}
+textarea:focus {
+    border-color: #cf2e2e; 
+    outline: none; 
+}
+
+
+.contact-form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f78da7; 
+    color: #fff;
+    font-size: 30px; 
+    cursor: pointer;
+    -webkit-border-radius: 60px;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+.contact-form input[type="submit"]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* ... Your provided CSS remains unchanged ... */
+
+/* Adjustments for responsiveness */
+
+/* Tablets and Small Desktops */
+@media screen and (max-width: 1024px) {
+
+    .nav-links {
+        margin-right: 50px;
+    }
+    
+    .logo img {
+        margin-left: 50px;
+        width: 250px;
+        height: 150px;
+    }
+    
+    .mission {
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+
+    .mission p {
+        margin-right: 50px;
+    }
+    
+    .gallery-grid {
+        padding: 0 20px;
+    }
+}
+
+/* Mobile and Tablets */
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+    
+    .burger {
+        display: flex;
+    }
+
+    .logo img {
+        margin-left: 25px;
+        width: 220px;
+        height: 130px;
+    }
+
+    .image figure img {
+        margin-left: 60px;
+    }
+
+    .mission {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .mission p {
+        margin-right: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .work h2 {
+        font-size: 28px;
+    }
+
+    .contact-form label {
+        font-size: 20px;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+    }
+    
+}
+
+/* Small Mobiles */
+@media screen and (max-width: 480px) {
+
+    .logo img {
+        margin-left: 10px;
+        width: 200px;
+        height: 120px;
+    }
+
+    .image figure img {
+        margin-left: 30px;
+    }
+
+    .mission {
+        margin-left: 10px;
+    }
+
+    .mission p {
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .work h2 {
+        font-size: 24px;
+    }
+
+    .contact-form label {
+        font-size: 18px;
+    }
+}
