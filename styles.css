@@ -362,7 +362,6 @@ textarea:focus {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/* ... Your provided CSS remains unchanged ... */
 
 /* Adjustments for responsiveness */
 
@@ -474,3 +473,60 @@ textarea:focus {
         font-size: 18px;
     }
 }
+
+/* Example adjustments for mobile */
+@media (max-width: 575.98px) { 
+    .nav-links, .logo img {
+        margin-left: 10px;
+        width: 200px;
+        height: 120px;
+    }
+
+    .image figure img {
+        margin-left: 10px;
+    }
+	.tagline {
+        font-size: 30px;
+    .mission {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    .mission p {
+        margin-right: 10px;
+    }
+}
+
+/* Example adjustments for tablet */
+@media (max-width: 767.98px) { 
+    .nav-links {
+        margin-right: 50px;
+    }
+	
+    .logo img {
+        margin-left: 50px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .image figure img {
+        margin-left: 50px;
+    }
+    .tagline {
+        font-size: 40px;
+	
+    .mission {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .mission p {
+        margin-right: 30px;
+    }
+}
+@media (max-width: 575.98px) { 
+    .tagline {
+        font-size: 30px;  /* Adjust based on your design's needs */
+    }
+}
+
