@@ -61,7 +61,6 @@
     .burger {
         display: flex;
     }
-}
 
 .logo img {
     margin: -50px 0;
@@ -115,7 +114,7 @@
 
 .tagline {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     margin: 0 auto;
     margin-top: 20px;
@@ -377,7 +376,8 @@ textarea:focus {
         width: 250px;
         height: 150px;
     }
-    
+    .tagline {
+        font-size: 20px;
     .mission {
         margin-top: 80px;
         margin-left: 40px;
@@ -408,7 +408,8 @@ textarea:focus {
         width: 220px;
         height: 130px;
     }
-
+.tagline {
+        font-size: 20px;
     .image figure img {
         margin-left: 60px;
     }
@@ -486,7 +487,7 @@ textarea:focus {
         margin-left: 10px;
     }
 	.tagline {
-        font-size: 30px;
+        font-size: 20px;
     .mission {
         margin-top: 40px;
         margin-left: 10px;
@@ -513,7 +514,7 @@ textarea:focus {
         margin-left: 50px;
     }
     .tagline {
-        font-size: 40px;
+        font-size: 20px;
 	
     .mission {
         margin-top: 50px;
@@ -526,7 +527,7 @@ textarea:focus {
 }
 @media (max-width: 575.98px) { 
     .tagline {
-        font-size: 30px;  /* Adjust based on your design's needs */
+        font-size: 20px;  /* Adjust based on your design's needs */
     }
 }
 
